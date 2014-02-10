@@ -22,13 +22,13 @@ class Huffwork
   
 end
 
-a = Huffwork.new
-test = [1,2,3]
-puts a.is_ordered test
-fail = [2,4,7]
-puts a.is_ordered fail
-down = [5,4,3]
-puts a.is_ordered down
-puts "......"
-big = [1,2,3,4,7,6,5,4,8,6,2,8,5,3,2,6,7,8,7,6,2,3]
-puts a.ordered_indexes big
+# a = Huffwork.new
+# test = [1,2,3]
+# puts a.is_ordered test
+# fail = [2,4,7]
+# puts a.is_ordered fail
+# down = [5,4,3]
+# puts a.is_ordered down
+# puts "......"
+# big = [1,2,3,4,7,6,5,4,8,6,2,8,5,3,2,6,7,8,7,6,2,3]
+# puts a.ordered_indexes big
