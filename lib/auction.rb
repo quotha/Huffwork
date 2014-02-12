@@ -19,7 +19,7 @@ class Auction
   end
   
   def started?
-    @started
+    started
   end
   
   def new_bid amount
@@ -33,11 +33,11 @@ class Auction
   end
   
   def called?
-    @called
+    called
   end
   
   def sold?
-    if called? and @bid > @reserve
+    if called? and bid > reserve
       true
     else
       false
