@@ -1,3 +1,5 @@
+require 'json'
+
 class Auction
   
   attr_accessor :item
@@ -12,6 +14,10 @@ class Auction
     @started  = false
     @called   = false
     @bid      = 0
+  end
+  
+  def status
+    {:reserve => reserve, :started => started, :called => called, :bid => bid}
   end
   
   def start

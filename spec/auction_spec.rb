@@ -22,6 +22,17 @@ describe Auction do
         my_auction.call
         puts my_auction.inspect
         puts my_auction.sold?
+        puts "..."
+        puts my_auction.status
+        puts my_auction.item
+        puts my_auction.status.to_json
+        
+        #############
+        ## easily store in a key value like redis:
+        ## redis.set my_auction.item, my_auction.status.to_json
+        ## redis.get my_auction.item
+        #############
+        
       end
     end
   end
