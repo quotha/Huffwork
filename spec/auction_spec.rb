@@ -2,7 +2,10 @@ require 'auction'
 
 describe Auction do
   
-  let(:my_auction) {Auction.new("Derek Jeter Rookie Card", 998)}
+  let(:my_auction) {Auction.new(
+    :item => "Derek Jeter Rookie Card", 
+    :reserve => 998)
+    }
   
   describe "#test" do
     context "when given an item to auction" do

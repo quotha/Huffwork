@@ -8,9 +8,9 @@ class Auction
   attr_accessor :called
   attr_accessor :bid
   
-  def initialize(item, reserve)
-    @item     = item
-    @reserve  = reserve
+  def initialize(args)
+    @item     = args[:item]
+    @reserve  = args[:reserve]
     @started  = false
     @called   = false
     @bid      = 0
