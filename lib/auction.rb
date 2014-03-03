@@ -11,9 +11,9 @@ class Auction
   def initialize(args)
     @item     = args[:item]
     @reserve  = args[:reserve]
-    @started  = false
-    @called   = false
-    @bid      = 0
+    @started  = args[:started]  || false
+    @called   = args[:called]   || false
+    @bid      = args[:bid]      || 0
   end
   
   def status
